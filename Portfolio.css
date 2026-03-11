@@ -1,0 +1,291 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.95);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo a {
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      color: #0f172a;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #334155;
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #0891b2;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      color: #0f172a;
+      border-bottom: 3px solid #e2e8f0;
+      padding-bottom: 0.4rem;
+      display: inline-block;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.02);
+      border: 1px solid #eef2f6;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      border-color: #a5f3fc;
+      box-shadow: 0 12px 25px -12px rgba(6, 182, 212, 0.2);
+    }
+
+    .grid-2, .grid-3 {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2,1fr); }
+    .grid-3 { grid-template-columns: repeat(3,1fr); }
+    
+    .intro-row {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .intro-text {
+      flex: 2 1 300px;
+    }
+
+    .intro-avatar {
+      flex: 0 0 140px;
+    }
+
+    .avatar-circle {
+      width: 140px;
+      height: 140px;
+      background: linear-gradient(145deg, #0891b2, #0e7490);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 500;
+      box-shadow: 0 15px 25px -8px rgba(8, 145, 178, 0.3);
+      border: 4px solid white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .skill-tag {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 0.6rem 1.4rem;
+      border-radius: 40px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: inline-block;
+      margin: 0.4rem 0.6rem 0.4rem 0;
+      border: 1px solid #bae6fd;
+    }
+
+    .skill-block {
+      margin-top: 1.8rem;
+    }
+
+    .skill-block h4 {
+      margin-bottom: 1rem;
+      color: #0f172a;
+      font-size: 1.2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 1.2rem;
+      padding: 1.8rem;
+      border: 1px solid #eef2f6;
+      transition: all 0.25s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      border-color: #22d3ee;
+      transform: translateY(-4px);
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+    }
+
+    .project-tech {
+      margin: 1rem 0;
+    }
+
+    .tech-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.3rem 1rem;
+      border-radius: 20px;
+      display: inline-block;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #f1f5f9;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      color: #1e293b;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid #cbd5e1;
+      transition: 0.15s;
+    }
+
+    .btn-link i { color: #0891b2; }
+    
+    .btn-link:hover {
+      background: #0891b2;
+      color: white;
+      border-color: #0891b2;
+    }
+
+    .btn-link:hover i { color: white; }
+    
+    .repo-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.2rem;
+      background: #f8fafc;
+      border-radius: 1rem;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid #0891b2;
+    }
+
+    .resume-btn {
+      background: #0f172a;
+      color: white;
+      padding: 1rem 2.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      border: none;
+      transition: 0.15s;
+      font-size: 1.1rem;
+    }
+    
+    .resume-btn:hover {
+      background: #0891b2;
+      transform: scale(1.02);
+    }
+
+    .contact-info p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-info i {
+      width: 30px;
+      color: #0891b2;
+      font-size: 1.3rem;
+    }
+
+    .social-links a {
+      color: #334155;
+      font-size: 1.8rem;
+      margin-right: 1.5rem;
+      transition: color 0.2s;
+    }
+
+    .social-links a:hover { color: #0891b2; }
+    
+    footer {
+      background: white;
+      margin-top: 3rem;
+      padding: 2rem 0;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      color: #64748b;
+    }
+    
+    hr { border: 1px solid #eef2f6; margin: 2rem 0; }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover; 
+      border: 4px solid white;
+      box-shadow: 0 15px 25px -8px rgba(8, 145, 178, 0.3);
+    }
+    
+    @media (max-width: 700px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .nav-links { gap: 1rem; margin-top: 0.5rem; }
+      .intro-row { flex-direction: column; align-items: start; }
+    }

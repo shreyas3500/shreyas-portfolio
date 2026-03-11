@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyas S · Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Portfolio.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo"><a href="#home">PORTFOLIO</a></div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="container" style="padding-top: 2.5rem;">
+      <div class="card intro-row">
+        <div class="intro-text">
+          <h1 style="font-size: 3.2rem; font-weight: 700; line-height: 1.1;">Shreyas S</h1>
+          <p style="font-size: 1.8rem; font-weight: 350; color: #334155; margin-top: 0.3rem;">Software Developer</p>
+          <p style="margin-top: 1.5rem; max-width: 600px; font-size: 1.1rem;">I develop web applications with HTML, CSS, JS and Python. 1+ year of experience building real-world solutions.</p>
+        </div>
+        <div class="intro-avatar">
+          <img src="profile_pic.png" alt="Shreyas S" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2 class="section-title">About me</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-bottom: 1.2rem;"><i class="fa-regular fa-user" style="margin-right: 10px; color:#0891b2;"></i> my journey</h3>
+          <p style="margin-bottom: 1.2rem;">Originally from Bangalore, completed my masters and started working as an intern in a company. Looking at my coding skills I was promoted to a full time position in the same company and got the best employee of the year award for 2025.</p>
+          <p><strong><i class="fa-solid fa-graduation-cap"></i> education:</strong> Master of Computer Applications, PES University (2024)</p>
+          <p style="margin-top: 1.2rem;"><strong><i class="fa-solid fa-bullseye"></i> career objective:</strong> join a team where I can contribute to meaningful projects and keep learning every day.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom: 1.2rem;"><i class="fa-regular fa-compass" style="margin-right: 8px; color:#0891b2;"></i> areas of interest</h3>
+          <ul style="list-style: none;">
+            <li style="margin-bottom: 1rem;">Real‑time applications</li>
+            <li style="margin-bottom: 1rem;">Developer tooling & automation</li>
+            <li style="margin-bottom: 1rem;">Open source & clean API design</li>
+            <li style="margin-bottom: 1rem;">Frontend development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2 class="section-title">Technical skills</h2>
+      <div class="card">
+        <div class="skill-block">
+          <h4><i class="fa-solid fa-laptop"></i> programming languages</h4>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+        </div>
+        <div class="skill-block">
+          <h4><i class="fa-solid fa-puzzle-piece"></i> frameworks & libraries</h4>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">React Native</span>
+        </div>
+        <div class="skill-block">
+          <h4><i class="fa-regular fa-database"></i> databases & tools</h4>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Digital Ocean</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid-2">
+        <div class="project-card">
+          <h3 class="project-title"><i class="fa-solid fa-truck-moving"></i> CordonNX</h3>
+          <p style="color:#475569; margin: 0.5rem 0 1rem; flex-grow:1;">CordonNX is a comprehensive, cloud-based GPS vehicle tracking and fleet management system that provides real-time monitoring, advanced analytics, and intelligent automation for businesses operating vehicle fleets of any size.</p>
+          <div class="project-tech">
+            <span class="tech-badge">HTML</span>
+            <span class="tech-badge">CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">DigitalOcean</span>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+            <a href="https://github.com/shreyas3500/CordonNX" target="_blank" class="btn-link"><i class="fab fa-github"></i> repository</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title"><i class="fa-solid fa-paw"></i> Bharat Eco Tourism</h3>
+          <p style="color:#475569; margin: 0.5rem 0 1rem; flex-grow:1;">Built a mobile application using React Native designed to serve as an interactive platform for tourists. Provides detailed information, interactive maps, and engaging features to enhance the experience of visiting wildlife sanctuaries around the country.</p>
+          <div class="project-tech">
+            <span class="tech-badge">React Native</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">Firebase</span>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+          </div>
+        </div>
+      </div>
+      
+      <p style="margin-top: 1.5rem; font-style: italic; color: #64748b;"><i class="fa-regular fa-folder-open"></i> More projects coming soon ...</p>
+    </section>
+
+    <section id="github" class="container">
+      <h2 class="section-title">GitHub</h2>
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+          <i class="fab fa-github" style="font-size: 2.8rem; color:#0f172a;"></i>
+          <a href="https://github.com/shreyas3500" target="_blank" style="font-size: 1.5rem; font-weight: 600; color:#0891b2; text-decoration: underline 2px #99f6e4;">github.com/shreyas3500</a>
+        </div>
+        <h4>✨ highlighted repository</h4>
+        <div class="repo-item">
+          <i class="fa-regular fa-star" style="color: #eab308; font-size: 1.2rem;"></i>
+          <div>
+            <strong style="font-size: 1.2rem;">CordonNX</strong> — Built a fleet tracking and management system using Flask for the backend and HTML, CSS and JS for the front end in digital Ocean server and MongoDB.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="card">
+        <ul style="list-style: none;">
+          <li style="margin-bottom: 1rem;"><i class="fa-regular fa-circle-check" style="color:#0891b2; margin-right: 15px;"></i> Web Development (Certified)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="resume" class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="card" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+        <span style="font-size: 1.2rem;"><i class="fa-regular fa-file-pdf" style="color:#0891b2; margin-right: 0.8rem;"></i>Shreyas_S_Resume.pdf</span>
+        <a href="SHREYAS_S_Resume.pdf" class="resume-btn" download><i class="fa-regular fa-circle-down"></i> Download PDF</a>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <div class="contact-info">
+          <p><i class="fa-regular fa-envelope"></i> shreyaspro3500@gmail.com</p>
+          <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/shreyas-s-43a579211" target="_blank" style="color:#0f172a; text-decoration: none;">linkedin.com/in/shreyas-s-43a579211</a></p>
+          <p><i class="fa-regular fa-phone"></i> +91 8971483173</p>
+        </div>
+        <hr>
+        <div class="social-links">
+          <a href="https://github.com/shreyas3500" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shreyas-s-43a579211" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:shreyaspro3500@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Shreyas S – built with <i class="fa-regular fa-heart" style="color: #0891b2;"></i> for portfolio showcase</p>
+      <p style="margin-top: 0.5rem; font-size: 0.95rem;">Deploy on GitHub Pages | Netlify | Vercel</p>
+    </div>
+  </footer>
+</body>
+</html>
